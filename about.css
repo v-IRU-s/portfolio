@@ -1,0 +1,49 @@
+.about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 840px;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text readability */
+}
+.image-container {
+    display: inline-block; /* Keeps span inline, but allows styling like a block element */
+}
+
+.left-aligned-image {
+    display: block; /* Ensures the image is treated as a block element */
+    margin-left: 0; /* Left-alignment, default behavior */
+    margin-right: auto; /* Ensures no margin on the right side */
+}
+
+
+.about-content {
+    position: relative;
+    z-index: 1;
+}

@@ -1,0 +1,22 @@
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact form {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio .grid {
+        grid-template-columns: 1fr;
+    }
+}

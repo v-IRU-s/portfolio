@@ -1,0 +1,67 @@
+.portfolio {
+    text-align: center;
+    padding: 12px 0;
+    color : #fff;
+}
+
+.portfolio .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio .project {
+    display: flex;
+    flex-wrap: wrap;  /* Allow items to wrap on smaller screens */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio .project-image {
+    flex: 1;
+    min-width: 300px;  /* Ensure the image section has at least 300px width */
+}
+
+.portfolio .project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.portfolio .project-description {
+    flex: 1;
+    min-width: 300px;  /* Ensure the description section has at least 300px width */
+    padding-left: 20px;  /* Add some space between image and text */
+}
+
+.portfolio .project-description h3 {
+    margin-top: 0;
+}
+
+.portfolio .project-description p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.portfolio .project-description a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.portfolio .project-description a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio .project {
+        flex-direction: column;  /* Stack the image and description vertically on small screens */
+    }
+
+    .portfolio .project-description {
+        padding-left: 0;  /* Remove left padding when in column layout */
+        padding-top: 20px; /* Add some space at the top */
+    }
+}

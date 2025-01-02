@@ -1,0 +1,234 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #191919;
+    color: #fff;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2% 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 5% 0;
+    background: #191919;
+}
+
+.about h2 {
+    background-color: none;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Skills Section */
+.skills {
+    text-align: center;
+    background: #191919;
+    padding: 5% 0;
+}
+
+.skills ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills li {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    background: #333;
+    border-radius: 8px;
+}
+
+.skills img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 5% 0;
+    background: #191919;
+}
+
+.portfolio h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Portfolio Project */
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.project-description {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.project-description img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project-image {
+    flex: 1;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-description a {
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-description a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact {
+    padding: 5% 0;
+    background: #191919;
+    text-align: center;
+}
+
+.contact nav {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about h2 {
+        font-size: 1.8rem;
+    }
+
+    .skills ul {
+        align-items: center;
+    }
+
+    .project {
+        align-items: center;
+    }
+
+    .project-description {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .project-description img {
+        width: 100%;
+    }
+
+    .contact nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* For Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .about h2 {
+        font-size: 1.6rem;
+    }
+
+    .skills li {
+        width: 80px;
+        height: 80px;
+    }
+
+    .portfolio h2 {
+        font-size: 1.8rem;
+    }
+
+    .project {
+        align-items: center;
+    }
+
+    .project-description {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .contact nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
