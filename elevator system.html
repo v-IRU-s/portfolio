@@ -11,10 +11,10 @@
             margin: 0;
             padding: 0;
             background-color: #191919;
-
         }
+
         a:hover {
-            color : #007bff;
+            color: #007bff;
             text-decoration: underline;
         }
 
@@ -24,27 +24,38 @@
             padding: 10px 0;
             text-align: center;
         }
+
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
-        .content,.content a{
+
+        .content {
             color: #007bff;
             font-weight: bold;
-            padding: 20px;
+            padding: 60px;
             text-align: center;
         }
-        .github-link {
-            display: block;
+
+        .live-link {
+            display: inline-block;
             margin-top: 20px;
-            color: blue;
+            color: #00aaff;
+            background-color: #222;
+            padding: 10px 20px;
+            border-radius: 8px;
             text-decoration: none;
-            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .live-link:hover {
+            background-color: #007bff;
+            color: #fff;
         }
 
         video {
@@ -65,6 +76,11 @@
         <source src="ELevator%20System.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+
+    <!-- Add your live hosted link here -->
+    <a class="live-link" href="https://elevator-system-frontend.vercel.app/" target="_blank">
+        🚀 View Live Demo
+    </a>
 </div>
 
 <footer>
